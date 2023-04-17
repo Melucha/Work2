@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Work2Melisa</title>
+    </head>
+    <body>
+        <h1>Pochoclos</h1>
+        <p>Las <strong>"palomitas de maíz"</strong> son un tipo de aperitivo hecho de granos de maíz que se inflan y estallan cuando se exponen al calor. Generalmente se consumen como un aperitivo salado en bolsas de papel o en recipientes de plástico en las salas de cine, en casa o en otros lugares donde se venden alimentos y bebidas. Las palomitas de maíz también se pueden preparar en casa utilizando una máquina de palomitas o en una olla con aceite caliente y granos de maíz crudos. <span style="color: brown;">Además de ser una opción de aperitivo saludable, las palomitas de maíz también son ricas en fibra y antioxidantes.</span> 
+        </p>
+        <form action="envio.php" method="post" target="_blank">
+        <p>Nuetsros pochoclos los podes encontrar dulces o saldos, cual prefieres tu?</p>
+        <br>
+        <input type="radio" name="sabor" value="dulces">dulces
+        <input type="radio" name="sabor" value="salados">salados
+        <br>
+        <p>Selecciona de que pais eres y conoces nuestros sabores</p>
+            <label for="pais">Select Country of origin:</label>
+            <select name="pais" id="pais">
+                <optgroup label="America">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolvia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Paraguay">Paraguay</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="Francia">Francia</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Croacia" selected="selected">Croacia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Marruecos">Marruecos</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <p>
+                Si quieres hacer una reserva, puedes dejarnos tus datos para saber si hay fecha disponible
+            </p>
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" size="tamaño" name="nombre" placeholder="escribe aqui tu correo" maxlength="10" minlength="4" required>
+            <small>Es obligatorio este campo</small>
+            <br>
+            <br>
+            <label for="fecha"></label>
+            <input type="date" id="fecha" name="fecha" max="2023-04-13">
+            <br>
+            <label for="time">Seleccionar horario</label>
+            <input type="time" name="time">
+            <br>
+            <br>
+            <label for="opinion">Deja tu comentario:</label>
+            <textarea type="file" id="opinion" size="tamaño" name="opinion" placeholder="Deja tu comentario" rows="2" cols="10"></textarea>
+            <br>
+            <br>
+            <input type="button" value="enviar tus datos">
+            <input type="reset" value="Resetear tus datos">
+            <p>Tambien puedes resgritarte gratuitamente a nuestra pagina y ser beneficiario de varias promociones semanales!!!</p>
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" size="tamaño" name="nombre" placeholder="escribe aqui tu correo" maxlength="10" minlength="4" required>
+            <small>Es obligatorio este campo</small>          
+            <br>
+            <label for="password">Crear contraseña:</label>
+            <input type="password" id="password" size="tamaño" name="password" placeholder="escribe aqui tu contraseña" maxlength="100" minlength="6">
+            <small>Es Obligatorio este campo</small>
+            <br>
+            <input type="button" onclick="alert('CODIGO DE DESCUENTO 50%')" value="Regalo">
+            </form>
+    </body>
